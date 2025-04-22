@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio - Tentang</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Quicksand', sans-serif;
+      background: #f6f2ec url('https://www.transparenttextures.com/patterns/graphy.png'); 
+      color: #4b4b4b;
+    }
+
+    .navbar {
+      background-color: #d6ccc2;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #5c5c5c !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: #8c715a !important;
+    }
+
+    .navbar .nav-link.active {
+      color: #ffffff !important;  /* Warna putih untuk teks aktif */
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .note {
+      background-color: white;
+      padding: 20px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      margin-bottom: 40px;
+      transform: rotate(-1deg);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    
+    .note:hover {
+      transform: rotate(1deg) scale(1.03); 
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+      z-index: 1;
+    }
+    
+
+    .note::before,
+    .note::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      background-color: #c5b7a3;
+      top: -10px;
+      transform: rotate(-5deg);
+    }
+
+    .note::before {
+      left: -10px;
+    }
+
+    .note::after {
+      right: -10px;
+    }
+
+    .about-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .decor {
+      position: absolute;
+      z-index: 0;
+    }
+
+    .sticker {
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #ffbb64;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 40px;
+      transform: rotate(-5deg);
+      top: 20px;
+      left: 30px;
+      position: absolute;
+      white-space: nowrap;
+      display: inline-block;
+      line-height: normal;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .judul {
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #4b4b4b;
+    }
+
+    footer {
+      background-color: #d6ccc2;
+      color: #5c5c5c;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="tentang.html">ANINDITA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="keterampilan.html">Keterampilan</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyek.html">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main> 
+    <section class="about-section">
+      <!-- Pengenalan Diri -->
+      <div class="note">
+        <img src="profil.png" alt="Foto Anindita" style="width: 100px; border-radius: 50%; margin-bottom: 10px;">
+        <p class="judul">Pengenalan Diri:</p>
+        Nama: Anindita Tri Mulia<br>
+        Alamat: Tegineneng, Pesawaran, Lampung<br>
+        TTL: Bumi Rejo, 27 Juni 2004<br>
+        Usia: 20 tahun<br>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="note">
+        <img src="school.png" alt="Icon Sekolah" style="width: 60px; margin-bottom: 10px;">
+        <p class="judul">Pendidikan:</p>
+        SD: SDN 5 Bumi Agung<br>
+        SMP: SMPN 1 Tegineneng<br>
+        SMA: SMAN 1 Natar<br>
+        Perguruan Tinggi: Universitas Lampung, Ilmu Komputer
+      </div>
+
+      <!-- Minat dan Hobi -->
+      <div class="note">
+        <img src="hobi.png" alt="Icon Hobi" style="width: 60px; margin-bottom: 10px;">
+        <p class="judul">Minat & Hobi:</p>
+        Minat: Teknologi, desain UI/UX, web development<br>
+        Hobi: Belajar otodidak, membuat konten di CapCut, aktif di olahraga dan travelling
+      </div>
+
+      <!-- Tujuan dan Ambisi -->
+      <div class="note">
+        <img src="tujuan.png" alt="Icon Tujuan" style="width: 60px; margin-bottom: 10px;">
+        <p class="judul">Tujuan & Ambisi:</p>
+        Saya ingin terus mengembangkan keterampilan dalam bidang teknologi dan desain, terutama dalam menciptakan solusi yang dapat memberikan dampak positif bagi masyarakat. Saya juga berharap dapat bekerja di industri teknologi terkemuka dan berkontribusi pada inovasi yang bermanfaat. Dalam jangka panjang, saya bercita-cita untuk membangun sebuah perusahaan yang fokus pada pengembangan produk digital yang dapat memecahkan masalah nyata.
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Anindita Tri Mulia. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

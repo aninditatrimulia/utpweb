@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio - Proyek</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #f6f2ec url('https://www.transparenttextures.com/patterns/graphy.png');
+      color: #4b4b4b;
+    }
+
+    .navbar {
+      background-color: #d6ccc2;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #5c5c5c !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: #8c715a !important;
+    }
+
+    .navbar .nav-link.active {
+      color: #ffffff !important;
+    }
+
+    main {
+      padding: 60px 20px 40px 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+      background-color: #fefaf6;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #3b2f23;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #5c5c5c;
+    }
+
+    .btn-earthtone {
+      background-color: white;
+      color: #a98467;
+      border: 1.5px solid #a98467;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    .btn-earthtone:hover {
+      background-color: #a98467;
+      color: white;
+    }
+
+    footer {
+      background-color: #d6ccc2;
+      color: #5c5c5c;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="tentang.html">ANINDITA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="keterampilan.html">Keterampilan</a></li>
+          <li class="nav-item"><a class="nav-link active" href="proyek.html">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Card 1 -->
+    <div class="project-card d-flex align-items-start">
+      <img src="suhu.jpg" alt="Monitoring Suhu" class="rounded me-3" style="width: 300px; height: 150px; object-fit: cover;">
+      <div>
+        <div class="project-title">Sistem IoT Monitoring Suhu</div>
+        <p class="project-desc">Sistem IoT berbasis ESP32 dan DHT22 untuk memantau suhu dan kelembapan ruang penyimpanan obat, dilengkapi LED indikator, buzzer, dan notifikasi melalui Blynk.</p>
+        <a href="https://youtu.be/DHkwzGn8j4g" target="_blank" class="btn-earthtone mt-3">Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card d-flex align-items-start h-100">
+      <img src="pbo.jpg" alt="Game JavaFX" class="rounded me-3" style="width: 300px; height: 150px; object-fit: cover;">
+      <div class="d-flex flex-column justify-content-between">
+        <div>
+          <div class="project-title">Game Dengan JavaFX</div>
+          <p class="project-desc">Membuat game ular tangga berbasis desktop yang interaktif dengan menggunakan JavaFX. Game ini dirancang dengan interface yang menarik dan animasi untuk meningkatkan pengalaman pengguna.</p>
+        </div>
+        <a href="https://github.com/syahdamrzyy/PROJECT-PBO-UAS/tree/main/JavaFXApplication15" target="_blank" class="btn-earthtone mt-3">Selengkapnya</a>
+      </div>
+    </div>    
+
+    <!-- Card 3 -->
+    <div class="project-card d-flex align-items-start">
+      <img src="nirkabel.png" alt="Komunikasi Nirkabel" class="rounded me-3" style="width: 300px; height: 150px; object-fit: cover;">
+      <div>
+        <div class="project-title">Rangkaian Komunikasi Nirkabel</div>
+        <p class="project-desc">Komunikasi nirkabel adalah metode transfer data antara perangkat tanpa koneksi fisik. Data dikirim melalui udara menggunakan frekuensi tertentu.</p>
+        <a href="https://youtu.be/TA06ylw8zqA" target="_blank" class="btn-earthtone mt-3">Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="project-card d-flex align-items-start">
+      <img src="bimsi.png" alt="Sistem Bimsi" class="rounded me-3" style="width: 300px; height: 150px; object-fit: cover;">
+      <div>
+        <div class="project-title">Sistem Manajemen Skripsi Online</div>
+        <p class="project-desc">Aplikasi berbasis web yang memudahkan mahasiswa dan dosen dalam mengelola proses bimbingan dan laporan skripsi secara digital.</p>
+        <a href="https://www.figma.com/design/LV5mgFdhkcOJlHbpBDAVtY/Bimsi?node-id=0-1&t=0D8arIZkTcFKPvsP-1" target="_blank" class="btn-earthtone mt-3">Selengkapnya</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Anindita Tri Mulia. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
